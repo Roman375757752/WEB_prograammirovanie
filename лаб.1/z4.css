@@ -1,0 +1,49 @@
+#container {
+    position: relative; /* Контейнер теперь опорная точка */
+    display: flex; /* Делаем колонки в ряд */
+    border-left: 200px solid #800000;
+}
+
+#col1 { /* Левая колонка */
+    width: 190px; /* Ширина */
+    background: #800000; /* Фон */
+    padding: 10px; /* Внутренние отступы */
+    color: black; /* Цвет текста */
+}
+
+#col2 { /* Правая колонка */
+    flex: 1; /* Занимает оставшееся пространство */
+    background: #e0e0e0; /* Фон */
+    padding: 5px; /* Поля вокруг текста */
+}
+
+
+#top { /* Шапка с заголовком страницы */
+    background: #e3e8cc; /* Цвет фона */
+    border: solid 1px black; /* Параметры рамки  */
+    padding: 10px 0 10px 10px; /* Поля вокруг текста */
+    margin-bottom: 5px; /* Расстояние между шапкой и колонками */
+    font-size: 24px; /* Размер шрифта */
+    font-weight: bold; /* Жирное начертание */
+}
+#menu { /* Меню сайта */
+    width: 20%; /* Ширина меню */
+    background: #e3e8cc; /* Цвет фона */
+    border: solid 1px black; /* Параметры рамки */
+    float: right; /* Состыковка со слоем контента по горизонтали */
+    padding: 3px; /* Внутренние поля */
+}
+#content { /* Основное содержание */
+    background: #e3e8cc; /* Цвет фона */
+    border: solid 1px black; /* Параметры рамки */
+    margin-right: 21%; /* Отступ слева с учетом ширины левой колонки */
+    margin-bottom: 5px /* Отступ снизу */
+}
+#content p{
+	padding: 3px; /* Внутренние поля контента*/
+}
+#bottom { /* Подвал */
+    background: #e3e8cc; /* Цвет фона */
+    border: solid 1px black; /* Параметры рамки */
+    padding: 3px; /* Поля вокруг текста */
+}
